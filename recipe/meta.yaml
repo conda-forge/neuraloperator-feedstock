@@ -1,5 +1,5 @@
 {% set name = "neuraloperator" %}
-{% set version = "1.0.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/neuraloperator-{{ version }}.tar.gz
-  sha256: 9c52ebb00575dd726bae0e7c2fa712a5e2485e30cd134a01eefb887902fdda80
+  sha256: dcf156d88c6a350ca785b22af94880fdd7673ebd83c3f27fd08eef624d20368e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
