@@ -26,12 +26,13 @@ requirements:
     - configmypy
     - tensorly
     - tensorly-torch
-    - torch-harmonics ==0.7.3
+    - torch-harmonics
     - matplotlib-base
-    - numpy >=1.25
+    - numpy
     - opt-einsum
     - h5py
     - zarr
+    - zencfg
 
 test:
   commands:
